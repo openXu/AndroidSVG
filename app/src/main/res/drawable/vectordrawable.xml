@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--AnimatedVectorDrawable其实就是通过ObjectAnimator
+和AnimatorSet对VectorDrawable进行属性等动画操作的一个
+Drawable；这玩意通常被定义成三个独立的xml文件，
+具体如下：
+第一步，创建<vector>元素的矢量资源，放置在res/drawable/下，
+动画一般发生在group或者path节点上，所以如果我们要给这些节点添加动画，
+一定要保证名字的独立。如下是一个例子：-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="64dp"
+    android:width="64dp"
+    android:viewportHeight="600"
+    android:viewportWidth="600" >
+    <group
+        android:name="rotationGroup"
+        android:pivotX="300.0"
+        android:pivotY="300.0"
+        android:rotation="45.0" >
+        <path
+            android:name="v"
+            android:fillColor="#000000"
+            android:pathData="M300,70 l 0,-70 70,70 0,0 -70,70z" />
+    </group>
+</vector>

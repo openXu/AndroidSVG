@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--第二步，创建<animated-vector>元素的矢量资源动画，
+放置在res/drawable/下，
+这里主要就是将动画与前面的VectorDrawable进行关联-->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/animatedvectordrawable">
+    <target
+        android:name="rotationGroup"
+        android:animation="@animator/rotation" />
+    <target
+        android:name="v"
+        android:animation="@animator/path_morph" />
+</animated-vector>
