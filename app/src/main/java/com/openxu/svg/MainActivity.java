@@ -11,9 +11,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
+/*
         Drawable drawable = getResources().getDrawable(R.drawable.animatedvectordrawable);
-        if (drawable instanceof Animatable) { ((Animatable) drawable).start(); }
+        if (drawable instanceof Animatable) { ((Animatable) drawable).start(); }*/
     }
 }
